@@ -1,0 +1,51 @@
+<ion-view title="Activity Detail" id="page10" style="background-color:#D9EEE6;">
+  <ion-content padding="true" class="has-header">
+    <div id="activityDetail-container5">
+      <div class="list card" id="activityDetail-card23">
+        <ion-item class="item-avatar" id="activityDetail-list-item20">
+          <img src="img/mZkoKaEARLSKJOoTLjgv_0512142957.png">
+          <h2>Buy Milk</h2>
+        </ion-item>
+        <creator-map-component options="{}" marker="true" location="Madison Capital" zoom="12" style="display:block;position:relative;width:100%;height:300px;">
+          <ui-gmap-google-map ng-if="map.center" center="map.center" zoom="map.zoom" options="map.options">
+            <ui-gmap-marker coords="map.marker.coords" idkey="map.marker.id" options="map.marker.options"></ui-gmap-marker>
+          </ui-gmap-google-map>
+        </creator-map-component>
+        <div class="item item-body" id="activityDetail-list-item-container4">
+          <div id="activityDetail-markdown4" class="show-list-numbers-and-dots">
+            <p style="margin-top:0px;color:#000000;">Start Time
+              <strong>2017/08/26 4:30PM</strong>
+            </p>
+          </div>
+        </div>
+        <div class="item item-body" id="activityDetail-list-item-container5">
+          <div id="activityDetail-markdown7" class="show-list-numbers-and-dots">
+            <p style="margin-top:0px;color:#000000;">Registerd People:
+              <strong>600</strong>
+            </p>
+          </div>
+        </div>
+        <ion-item class="item-icon-left assertive" id="activityDetail-list-item21">
+          <i class="icon ion-music-note"></i>Play Song</ion-item>
+      </div>
+    </div>
+    <div id="activityDetail-container9">
+      <ion-list id="activityDetail-list9">
+        <ion-item class="item-avatar" id="activityDetail-list-item40" ui-sref="tabsController.activityMemberDetail()">
+          <img src="img/4oo1QrOBSlehSmfwnqnj_images2.jpg">
+          <h2>李校长？（距离１００米）</h2>
+        </ion-item>
+        <ion-item class="item-avatar" id="activityDetail-list-item41" ui-sref="tabsController.activityMemberDetail()">
+          <img src="img/K4qkUkmTJq1DipWRcU2S_68de7829jw1et79fb4zk6j20hs0no0ws_cover.jpg">
+          <h2>张老师（距离１千米）</h2>
+        </ion-item>
+        <ion-item class="item-avatar" id="activityDetail-list-item42" ui-sref="tabsController.activityMemberDetail()">
+          <img src="img/JGMri3vKTB6t7ChkL3Oc_images.jpg">
+          <h2>学生（距离十万八千米）</h2>
+        </ion-item>
+      </ion-list>
+    </div>
+    <button id="activityDetail-button18" class="button button-balanced button-block">Join</button>
+    <button id="activityDetail-button17" class="button button-assertive button-block">Cancle</button>
+  </ion-content>
+</ion-view>

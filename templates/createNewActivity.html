@@ -1,0 +1,36 @@
+<ion-view title="Create New Activity" id="page3" style="background-color:#D9EEE6;">
+  <ion-content padding="true" class="has-header">
+    <div id="createNewActivity-container1">
+      <form id="createNewActivity-form3" class="list">
+        <label class="item item-input item-stacked-label" id="createNewActivity-input2">
+          <span class="input-label">Event Name</span>
+          <input type="text" placeholder="Event Name">
+        </label>
+        <div class="spacer" style="width: 300px; height: 17px;"></div>
+        <label class="item item-input item-stacked-label" id="createNewActivity-input3">
+          <span class="input-label">Start Date</span>
+          <input type="date" placeholder="Today">
+        </label>
+        <div class="spacer" style="width: 300px; height: 17px;"></div>
+        <label class="item item-input item-stacked-label" id="createNewActivity-input4">
+          <span class="input-label">Start time</span>
+          <input type="time" placeholder="30 min later">
+        </label>
+        <div class="spacer" style="width: 300px; height: 17px;"></div>
+        <ion-toggle toggle-class="toggle-positive" id="createNewActivity-toggle1">Private?</ion-toggle>
+        <div class="spacer" style="width: 300px; height: 17px;"></div>
+      </form>
+    </div>
+    <form id="createNewActivity-form14" class="list">
+      <label class="item item-input" id="createNewActivity-textarea1">
+        <span class="input-label">Description</span><textarea placeholder=""></textarea></label>
+    </form>
+    <div class="spacer" style="width: 300px; height: 26px;"></div>
+    <creator-map-component options="{}" marker="true" location="Madison Capital" zoom="12" style="display:block;position:relative;width:100%;height:300px;">
+      <ui-gmap-google-map ng-if="map.center" center="map.center" zoom="map.zoom" options="map.options">
+        <ui-gmap-marker coords="map.marker.coords" idkey="map.marker.id" options="map.marker.options"></ui-gmap-marker>
+      </ui-gmap-google-map>
+    </creator-map-component>
+    <button id="createNewActivity-button11" class="button button-positive button-block">Submit</button>
+  </ion-content>
+</ion-view>

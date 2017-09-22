@@ -1,0 +1,24 @@
+<ion-view title="Find Activity Around" id="page2" style="background-color:#D9EEE6;">
+  <ion-content padding="true" class="has-header">
+    <div id="findActivityAround-container3">
+      <creator-map-component options="{}" marker="true" location="Madison Capital" zoom="12" style="display:block;position:relative;width:100%;height:400px;">
+        <ui-gmap-google-map ng-if="map.center" center="map.center" zoom="map.zoom" options="map.options" dragging="map.dragging">
+          <ui-gmap-marker coords="map.marker.coords" idkey="map.marker.id" options="map.marker.options"></ui-gmap-marker>
+        </ui-gmap-google-map>
+      </creator-map-component>
+      <div class="spacer" style="width: 300px; height: 33px;"></div>
+      <div id="findActivityAround-container12">
+        <form id="findActivityAround-form13" class="list">
+          <ion-item class="range range-positive" id="findActivityAround-range2">Day
+            <input type="range" value="50" min="0" max="100" step="1">
+          </ion-item>
+          <div class="spacer" style="width: 300px; height: 14px;"></div>
+          <ion-item class="range range-positive" id="findActivityAround-range3">Distance
+            <input type="range" value="50" min="0" max="100" step="1">
+          </ion-item>
+        </form>
+      </div>
+      <a href-inappbrowser="page8" id="findActivityAround-button14" class="button button-positive button-block">Show Detail</a>
+    </div>
+  </ion-content>
+</ion-view>
